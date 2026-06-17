@@ -1,4 +1,4 @@
-# Niraakar — tutoring &amp; counseling website
+# Abbal Dhakal — tutoring &amp; counseling website
 
 A hand-built static site (no framework, no build step). Open `index.html`
 in a browser to view it locally; nothing to install.
@@ -31,7 +31,7 @@ Your live URL will be:
 
 | Thing | Where |
 |---|---|
-| **Your name** | search-replace `Niraakar` everywhere |
+| **Your name** | search-replace `Abbal Dhakal` everywhere |
 | **Your cutout photo** | replace `assets/img/portrait.svg` → e.g. `portrait.png` (transparent PNG looks best), then update the `<img src>` in `index.html` / `about.html` |
 | **Credentials** (hero left) | `index.html`, the `.creds` list |
 | **College logos** | drop real files into `assets/logos/`, keeping the same filenames |
