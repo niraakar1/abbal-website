@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 </head>
@@ -24,7 +24,10 @@
   <header class="site-head">
     <nav class="nav wrap">
       <a class="brand" href="index.html">
-        <span class="brand-mark">A</span>
+        <svg class="brand-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="10" fill="#1C3F5A"/>
+          <path d="M20 9l2.6 8H31l-6.8 5 2.6 8L20 25l-6.8 5 2.6-8L9 17h8.4z" fill="#E6CC83"/>
+        </svg>
         <span class="brand-name">Abbal Dhakal</span>
       </a>
       <div class="nav-links">
@@ -42,37 +45,22 @@
     <section class="hero wrap">
       <div class="hero-doodles" aria-hidden="true">
         <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice"
-             fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <g opacity="0.5" stroke-width="2.4">
-            <!-- left squiggle cluster -->
-            <path d="M40 120c30-34 60-10 50 20s-58 18-44-16 70-6 70 30" stroke="#1C3F5A"/>
-            <path d="M70 210c26 0 26 34 0 34s-26-34 0-34" stroke="#2F6E7C"/>
-            <path d="M120 300c18-22 40-22 56 0s34 18 52-2" stroke="#1C3F5A"/>
-            <!-- gold spiral -->
-            <path d="M150 410c-2-30 40-34 44-6s-34 36-44 6" stroke="#C29836"/>
-            <!-- top arrow -->
-            <path d="M250 70c60 18 130 8 150-26m-14-4 16 6-6 16" stroke="#1C3F5A"/>
-            <!-- constellation center -->
-            <g stroke="#2F6E7C">
-              <path d="M560 120l70 36 64-44 70 30" opacity="0.85"/>
-              <path d="M630 156l-30 70 80 24" opacity="0.85"/>
-            </g>
-            <circle cx="560" cy="120" r="4" fill="#1C3F5A" stroke="none"/>
-            <circle cx="630" cy="156" r="4" fill="#C29836" stroke="none"/>
-            <circle cx="694" cy="112" r="4" fill="#2F6E7C" stroke="none"/>
-            <circle cx="764" cy="142" r="4" fill="#1C3F5A" stroke="none"/>
-            <circle cx="600" cy="226" r="4" fill="#2F6E7C" stroke="none"/>
-            <circle cx="680" cy="250" r="4" fill="#C29836" stroke="none"/>
-            <!-- sparkles -->
-            <path d="M470 230l5-13 5 13 13 5-13 5-5 13-5-13-13-5z" stroke="#C29836"/>
-            <path d="M900 90l4-10 4 10 10 4-10 4-4 10-4-10-10-4z" stroke="#C29836"/>
-            <!-- right arrows -->
-            <path d="M980 200c40 6 80-2 110-30m-12-6 14 6-6 14" stroke="#1C3F5A"/>
-            <path d="M970 300c44 14 92 8 120-22m-12-4 14 6-7 13" stroke="#2F6E7C"/>
-            <!-- right squiggles -->
-            <path d="M1040 380c24-26 48-8 40 18s-50 8-40-18" stroke="#C29836"/>
-            <path d="M1080 130c26 0 26 34 0 34s-26-34 0-34" stroke="#1C3F5A"/>
+             fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2">
+          <!-- one sweeping arrow, top-left -->
+          <path d="M70 96c70 26 150 12 188-30m-16-2 18 6-7 17" stroke="#1C3F5A" opacity=".35"/>
+          <!-- a small, calm constellation, upper area -->
+          <g opacity=".4">
+            <path d="M880 70l64 30 70-36" stroke="#2F6E7C"/>
+            <path d="M944 100l-18 64" stroke="#2F6E7C"/>
+            <circle cx="880" cy="70" r="3.5" fill="#1C3F5A"/>
+            <circle cx="944" cy="100" r="3.5" fill="#C79A3A"/>
+            <circle cx="1014" cy="64" r="3.5" fill="#2F6E7C"/>
+            <circle cx="926" cy="164" r="3.5" fill="#1C3F5A"/>
           </g>
+          <!-- twinkling sparkles -->
+          <path class="spark" d="M150 360l5-13 5 13 13 5-13 5-5 13-5-13-13-5z" stroke="#C79A3A" opacity=".5"/>
+          <path class="spark" d="M1080 300l4-11 4 11 11 4-11 4-4 11-4-11-11-4z" stroke="#C79A3A" opacity=".5"/>
+          <path class="spark" d="M40 230l4-10 4 10 10 4-10 4-4 10-4-10-10-4z" stroke="#2F6E7C" opacity=".5"/>
         </svg>
       </div>
 
@@ -88,25 +76,42 @@
 
         <!-- CUSTOMIZE ME: credential lines -->
         <ul class="creds" aria-label="Credentials">
-          <li><span class="creds-dot"></span> Reach-certified counselor</li>
-          <li><span class="creds-dot"></span> IC<sup>3</sup> Scholar — living the IC3 mission</li>
-          <li><span class="creds-dot"></span> U.S. Embassy Guidance-Counselor Training Program</li>
-          <li><span class="creds-dot"></span> Country Director, Wonder Future Nepal</li>
+          <li><svg class="creds-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6.1 4.5 2.3 7.3L12 16.9 5.8 21l2.3-7.3L2 9.2h7.6z"/></svg>Reach-certified counselor</li>
+          <li><svg class="creds-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6.1 4.5 2.3 7.3L12 16.9 5.8 21l2.3-7.3L2 9.2h7.6z"/></svg>IC<sup>3</sup> Scholar — living the IC3 mission</li>
+          <li><svg class="creds-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6.1 4.5 2.3 7.3L12 16.9 5.8 21l2.3-7.3L2 9.2h7.6z"/></svg>U.S. Embassy Guidance-Counselor Training Program</li>
+          <li><svg class="creds-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6.1 4.5 2.3 7.3L12 16.9 5.8 21l2.3-7.3L2 9.2h7.6z"/></svg>Country Director, Wonder Future Nepal</li>
         </ul>
 
         <div class="cta-row">
-          <a class="btn btn-primary" href="index.html#contact">Get counseling</a>
+          <a class="btn btn-gold" href="index.html#contact">Get counseling</a>
           <a class="btn btn-ghost" href="index.html#contact">Get SAT tutoring →</a>
         </div>
       </div>
 
       <div class="hero-portrait">
         <div class="portrait-frame">
-          <!-- CUSTOMIZE ME: drop your cutout at assets/img/portrait.png (transparent PNG works best) -->
-          <img src="assets/img/portrait.svg" alt="Portrait of Abbal Dhakal" class="portrait" />
-          <svg class="scribble" viewBox="0 0 320 360" aria-hidden="true">
-            <path d="M160 14C70 12 18 96 22 188c4 96 70 158 142 156 78-2 138-66 134-160C434 96 250 16 160 14z" />
+          <!-- CUSTOMIZE ME: when you have a transparent cutout, replace this <svg> with
+               <img src="assets/img/portrait.png" alt="Abbal Dhakal" class="portrait-art" /> -->
+          <svg class="portrait-art" viewBox="0 0 320 340" aria-label="Illustration of Abbal Dhakal">
+            <path class="skin" d="M64 340c0-58 43-96 96-96s96 38 96 96z"/>
+            <path class="skin" d="M160 84c33 0 55 26 55 63 0 39-25 69-55 69s-55-30-55-69c0-37 22-63 55-63z"/>
+            <g class="stroke">
+              <path d="M64 340c0-58 43-96 96-96s96 38 96 96"/>
+              <path d="M134 246c8 12 44 12 52 0"/>
+              <path d="M160 84c33 0 55 26 55 63 0 39-25 69-55 69s-55-30-55-69c0-37 22-63 55-63z"/>
+              <path d="M104 150c-7-48 33-72 56-72s63 24 56 72"/>
+            </g>
+            <g class="stroke thin">
+              <path d="M129 150c6-5 17-5 23 0"/>
+              <path d="M168 150c6-5 17-5 23 0"/>
+              <path d="M158 160v18c0 4-4 6-9 7"/>
+              <path d="M137 196c13 11 33 11 46 0"/>
+            </g>
           </svg>
+          <svg class="scribble" viewBox="0 0 320 320" aria-hidden="true">
+            <circle cx="160" cy="160" r="150"/>
+          </svg>
+          <div class="portrait-cap">Illustration — your cutout photo goes here</div>
         </div>
         <div class="portrait-badge">
           <strong>9</strong><span>students placed at<br/>schools below ↓</span>
@@ -119,16 +124,16 @@
       <p class="band-label">Where my students go</p>
       <div class="marquee" data-marquee>
         <div class="marquee-track">
-          <!-- CUSTOMIZE ME: replace the SVGs in assets/logos/ with real logos (keep the filenames) -->
-          <img src="assets/logos/princeton.svg" alt="Princeton" />
-          <img src="assets/logos/caltech.svg" alt="Caltech" />
-          <img src="assets/logos/haverford.svg" alt="Haverford" />
-          <img src="assets/logos/williams.svg" alt="Williams" />
-          <img src="assets/logos/franklin-marshall.svg" alt="Franklin &amp; Marshall" />
-          <img src="assets/logos/gettysburg.svg" alt="Gettysburg" />
-          <img src="assets/logos/lehigh.svg" alt="Lehigh" />
-          <img src="assets/logos/bryn-mawr.svg" alt="Bryn Mawr" />
-          <img src="assets/logos/bucknell.svg" alt="Bucknell" />
+          <!-- CUSTOMIZE ME: edit the college names here -->
+          <span class="chip">Princeton</span>
+          <span class="chip">Caltech</span>
+          <span class="chip">Haverford</span>
+          <span class="chip">Williams</span>
+          <span class="chip">Franklin &amp; Marshall</span>
+          <span class="chip">Gettysburg</span>
+          <span class="chip">Lehigh</span>
+          <span class="chip">Bryn Mawr</span>
+          <span class="chip">Bucknell</span>
         </div>
       </div>
     </section>
@@ -188,7 +193,7 @@
       </header>
 
       <div class="quotes">
-        <!-- CUSTOMIZE ME: up to 3–4. Swap photos at assets/img/student-*.svg -->
+        <!-- CUSTOMIZE ME: up to 3–4 testimonials -->
         <figure class="quote">
           <div class="quote-mark">&ldquo;</div>
           <blockquote>
@@ -196,7 +201,7 @@
             even possible. The essays finally sounded like me.
           </blockquote>
           <figcaption>
-            <img src="assets/img/student-1.svg" alt="" />
+            <span class="avatar avatar-1" aria-hidden="true">A</span>
             <span><strong>Aarav S.</strong><small>Haverford '29</small></span>
           </figcaption>
         </figure>
@@ -208,7 +213,7 @@
             I was coming from and built a list I could actually afford.
           </blockquote>
           <figcaption>
-            <img src="assets/img/student-2.svg" alt="" />
+            <span class="avatar avatar-2" aria-hidden="true">P</span>
             <span><strong>Prisha R.</strong><small>Bryn Mawr '28</small></span>
           </figcaption>
         </figure>
@@ -220,7 +225,7 @@
             190 points and I got into my reach school.
           </blockquote>
           <figcaption>
-            <img src="assets/img/student-3.svg" alt="" />
+            <span class="avatar avatar-3" aria-hidden="true">K</span>
             <span><strong>Kiran T.</strong><small>Lehigh '27</small></span>
           </figcaption>
         </figure>
@@ -236,7 +241,7 @@
         </div>
         <div class="contact-actions">
           <!-- CUSTOMIZE ME: your email -->
-          <a class="btn btn-primary" href="mailto:abbal@superscholar.io?subject=Counseling%20inquiry">Get counseling</a>
+          <a class="btn btn-gold" href="mailto:abbal@superscholar.io?subject=Counseling%20inquiry">Get counseling</a>
           <a class="btn btn-ghost btn-ghost-light" href="mailto:abbal@superscholar.io?subject=SAT%20tutoring%20inquiry">Get SAT tutoring</a>
         </div>
       </div>
@@ -247,7 +252,10 @@
   <footer class="site-foot">
     <div class="wrap foot-inner">
       <span class="brand">
-        <span class="brand-mark">A</span>
+        <svg class="brand-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="10" fill="#1C3F5A"/>
+          <path d="M20 9l2.6 8H31l-6.8 5 2.6 8L20 25l-6.8 5 2.6-8L9 17h8.4z" fill="#E6CC83"/>
+        </svg>
         <span class="brand-name">Abbal Dhakal</span>
       </span>
       <p class="foot-note">SAT tutoring · College admissions · Counseling for South Asian students</p>
