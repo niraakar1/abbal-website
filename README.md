@@ -38,7 +38,7 @@ Your live URL will be:
 | **Testimonials** (up to 3–4) | `index.html`, the `.quotes` block + `assets/img/student-*.svg` |
 | **Philosophy** | `about.html`, the `.philosophy` block (placeholder for now) |
 | **Project links** | `about.html`, set the real `href` on each `.project` |
-| **Email** | the `mailto:` links (currently `i.niraakar@gmail.com`) |
+| **Email** | the `mailto:` links (currently `abbal@superscholar.io`) |
 
 ### Colleges in the marquee
 Princeton · Caltech · Haverford · Williams · Franklin &amp; Marshall ·

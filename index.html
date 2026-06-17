@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 </head>
@@ -40,6 +40,42 @@
   <main>
     <!-- ===================== HERO ===================== -->
     <section class="hero wrap">
+      <div class="hero-doodles" aria-hidden="true">
+        <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice"
+             fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <g opacity="0.5" stroke-width="2.4">
+            <!-- left squiggle cluster -->
+            <path d="M40 120c30-34 60-10 50 20s-58 18-44-16 70-6 70 30" stroke="#1C3F5A"/>
+            <path d="M70 210c26 0 26 34 0 34s-26-34 0-34" stroke="#2F6E7C"/>
+            <path d="M120 300c18-22 40-22 56 0s34 18 52-2" stroke="#1C3F5A"/>
+            <!-- gold spiral -->
+            <path d="M150 410c-2-30 40-34 44-6s-34 36-44 6" stroke="#C29836"/>
+            <!-- top arrow -->
+            <path d="M250 70c60 18 130 8 150-26m-14-4 16 6-6 16" stroke="#1C3F5A"/>
+            <!-- constellation center -->
+            <g stroke="#2F6E7C">
+              <path d="M560 120l70 36 64-44 70 30" opacity="0.85"/>
+              <path d="M630 156l-30 70 80 24" opacity="0.85"/>
+            </g>
+            <circle cx="560" cy="120" r="4" fill="#1C3F5A" stroke="none"/>
+            <circle cx="630" cy="156" r="4" fill="#C29836" stroke="none"/>
+            <circle cx="694" cy="112" r="4" fill="#2F6E7C" stroke="none"/>
+            <circle cx="764" cy="142" r="4" fill="#1C3F5A" stroke="none"/>
+            <circle cx="600" cy="226" r="4" fill="#2F6E7C" stroke="none"/>
+            <circle cx="680" cy="250" r="4" fill="#C29836" stroke="none"/>
+            <!-- sparkles -->
+            <path d="M470 230l5-13 5 13 13 5-13 5-5 13-5-13-13-5z" stroke="#C29836"/>
+            <path d="M900 90l4-10 4 10 10 4-10 4-4 10-4-10-10-4z" stroke="#C29836"/>
+            <!-- right arrows -->
+            <path d="M980 200c40 6 80-2 110-30m-12-6 14 6-6 14" stroke="#1C3F5A"/>
+            <path d="M970 300c44 14 92 8 120-22m-12-4 14 6-7 13" stroke="#2F6E7C"/>
+            <!-- right squiggles -->
+            <path d="M1040 380c24-26 48-8 40 18s-50 8-40-18" stroke="#C29836"/>
+            <path d="M1080 130c26 0 26 34 0 34s-26-34 0-34" stroke="#1C3F5A"/>
+          </g>
+        </svg>
+      </div>
+
       <div class="hero-copy">
         <p class="eyebrow"><span class="tick"></span> Tutoring &amp; admissions, done by hand</p>
         <h1 class="display">
@@ -106,6 +142,7 @@
 
       <div class="cards">
         <article class="card">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 11c0-2 1.4-3 4-3 5 0 8 2 12 2s7-2 12-2c2.6 0 4 1 4 3v26c0 2-1.4 3-4 3-5 0-8-2-12-2s-7 2-12 2c-2.6 0-4-1-4-3z"/><path d="M24 10v29"/><path d="M30 30l4-4 3 3-4 4-4 1z"/></svg></span>
           <span class="card-no">01</span>
           <h3>SAT Tutoring</h3>
           <p>Targeted, score-moving prep — diagnostics, real practice tests,
@@ -113,6 +150,7 @@
           <a class="card-link" href="index.html#contact">Start prep →</a>
         </article>
         <article class="card">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M31 17l-5 13-12 5 5-13z"/><circle cx="24" cy="24" r="1.6" fill="currentColor" stroke="none"/></svg></span>
           <span class="card-no">02</span>
           <h3>College Admissions Guidance</h3>
           <p>School list, essays, and strategy. We build an application that
@@ -120,6 +158,7 @@
           <a class="card-link" href="index.html#contact">Plan my list →</a>
         </article>
         <article class="card">
+          <span class="card-ico" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 11h28a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H18l-8 7v-7H6a4 4 0 0 1-4-4V15a4 4 0 0 1 4-4z"/><circle cx="14" cy="21" r="1.5" fill="currentColor" stroke="none"/><circle cx="21" cy="21" r="1.5" fill="currentColor" stroke="none"/><circle cx="28" cy="21" r="1.5" fill="currentColor" stroke="none"/></svg></span>
           <span class="card-no">03</span>
           <h3>Counseling for South Asian Students</h3>
           <p>For first-gen and international students from Nepal and across South Asia —
@@ -197,8 +236,8 @@
         </div>
         <div class="contact-actions">
           <!-- CUSTOMIZE ME: your email -->
-          <a class="btn btn-primary" href="mailto:i.niraakar@gmail.com?subject=Counseling%20inquiry">Get counseling</a>
-          <a class="btn btn-ghost btn-ghost-light" href="mailto:i.niraakar@gmail.com?subject=SAT%20tutoring%20inquiry">Get SAT tutoring</a>
+          <a class="btn btn-primary" href="mailto:abbal@superscholar.io?subject=Counseling%20inquiry">Get counseling</a>
+          <a class="btn btn-ghost btn-ghost-light" href="mailto:abbal@superscholar.io?subject=SAT%20tutoring%20inquiry">Get SAT tutoring</a>
         </div>
       </div>
     </section>

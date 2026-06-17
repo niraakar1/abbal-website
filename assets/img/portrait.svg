@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400">
   <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#2a6049"/><stop offset="1" stop-color="#173B2D"/></linearGradient></defs>
+    <stop offset="0" stop-color="#2F6E7C"/><stop offset="1" stop-color="#1C3F5A"/></linearGradient></defs>
   <g fill="url(#g)">
     <circle cx="180" cy="138" r="78"/>
     <path d="M58 400c0-78 55-132 122-132s122 54 122 132z"/>
   </g>
-  <text x="180" y="372" font-family="Georgia,serif" font-size="17" fill="#E7C277" text-anchor="middle" opacity=".9">your cutout photo here</text>
+  <text x="180" y="372" font-family="Georgia,serif" font-size="17" fill="#E2C475" text-anchor="middle" opacity=".92">your cutout photo here</text>
 </svg>
